@@ -1,0 +1,31 @@
+﻿@model List<Product>
+
+<h2>Список продуктов</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Цена</th>
+            <th>Изображение</th>
+            <th>Категория</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ID</td>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>
+                    <img src="@Url.Action("GetAvatar", "Avatar")" alt="Изображение" width="50" height="50" />
+                </td>
+                <td>@product.Category.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

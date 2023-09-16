@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="lb8.Classes.AllPayCalculationStrategy">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\AllPayCalculationStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="lb8.Classes.BasePayCalculationStrategy">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\BasePayCalculationStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.172" />
+  </Class>
+  <Class Name="lb8.Classes.JobType">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAYAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\JobType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="lb8.Classes.PayCalculator">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\PayCalculator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_strategy" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="lb8.Classes.PayrollDepartment">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAQABAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Classes\PayrollDepartment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_payCalculator" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_jobTypes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="lb8.Interfaces.IJobType">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAYAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IJobType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="lb8.Interfaces.IPayCalculationStrategy">
+    <Position X="0.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPayCalculationStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="lb8.Interfaces.IPayCalculator">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPayCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

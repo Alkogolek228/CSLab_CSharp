@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Главная страница";
+}
+<h2>@ViewData["Text"]</h2>
+
+<main>
+    <form action="#" method="get">
+        <select asp-items="@ViewData["Lst"] as SelectList"></select>
+        <ol type="A">
+            @for (int i = 1; i < 5; i++)
+            {
+                <li>элемент @i списка</li>
+            }
+        </ol>
+
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox1" id="checkbox1">
+                <label class="form-check-label" for="checkbox1">
+                    Checkbox 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox2" id="checkbox2">
+                <label class="form-check-label" for="checkbox2">
+                    Checkbox 2
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radiobutton" id="radiobutton1" value="option1">
+                <label class="form-check-label" for="radiobutton1">
+                    Radio Button 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radiobutton" id="radiobutton2" value="option2">
+                <label class="form-check-label" for="radiobutton2">
+                    Radio Button 2
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radiobutton" id="radiobutton3" value="option3">
+                <label class="form-check-label" for="radiobutton3">
+                    Radio Button 3
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="login" class="form-label">Login:</label>
+            <input type="text" class="form-control" id="login" name="login">
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</main>
